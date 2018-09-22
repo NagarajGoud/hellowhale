@@ -10,7 +10,7 @@ node{
 
    stage('Runcontainer on dev server'){
 
-   sh 'docker run -p 8080:8080 -d --name my-kishan kishanpeddaboina/my-app:${BUILD_NUMBER}'
+   sh 'docker run -p 8080:8080 -d --name my-kishan nagarajgoud/my-app:${BUILD_NUMBER}'
   
 }
 
