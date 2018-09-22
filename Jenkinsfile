@@ -1,4 +1,4 @@
-node{
+node {
     stage('Scm Checkout'){
     git credentialsId: 'git', url: 'https://github.com/NagarajGoud/hellowhale.git'
 }
@@ -16,4 +16,5 @@ node{
   
 }
 
+}
 }
