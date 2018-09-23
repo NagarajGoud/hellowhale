@@ -10,7 +10,7 @@ node {
 
    stage('Runcontainer on dev server'){
 
-   def dockerRun = 'docker run -p 8080:8080 -d -v /var/run/docker.sock:/var/run/docker.sock --name my-kishan nagarajgoud/my-app:${BUILD_NUMBER}'
+   def dockerRun = 'docker run -p 8080:8080 -d --name my-kishan nagarajgoud/my-app:${BUILD_NUMBER}'
   sshagent(['ssh']) {
  sh "ssh -o StrictHostKeyChecking=no ubuntu@10.0.1.38 ${dockerRun}"
   
